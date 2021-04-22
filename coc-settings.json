@@ -1,0 +1,48 @@
+{
+  "tslint.autoFixOnSave": true,
+  "tsserver.enableJavascript": true,
+  "eslint.autoFixOnSave": true,
+  "git.enableGutters": true,
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "git.addGBlameToVirtualText": false,
+  "git.showCommitInFloating": false,
+  "git.semanticCommit.scope": false,
+  "list.source.files.args": ["--hidden", "--files"],
+  "list.source.files.excludePatterns": ["**/.git/**/*"],
+  "list.alignColumns": true,
+  "list.previewSplitRight": false,
+  "html.filetypes": ["typescriptreact", "html"],
+  "smartf.timeout": 3000,
+  "smartf.jumpOnTrigger": false,
+  "smartf.wordJump": false,
+  "imselect.defaultInput": "com.apple.keylayout.ABC",
+  "imselect.enableStatusItem": false,
+  "imselect.enableFloating": false,
+  "diagnostic.enable": true,
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.errorSign": "×",
+  "java.format.enabled": true,
+  "java.format.settings.url": "/Users/pengchangdong/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    },
+    "clojure-lsp": {
+      "command": "bash",
+      "args": ["-c", "clojure-lsp"],
+      "filetypes": ["clojure"],
+      "rootPatterns": ["project.clj", "deps.edn"],
+      "additionalSchemes": ["jar", "zipfile"],
+      "trace.server": "verbose",
+      "initializationOptions": {
+      }
+    }
+  },
+  "coc.preferences.extensionUpdateCheck": "daily"
+}
